@@ -7,7 +7,21 @@
     <title>Page Transition Using BarbaJS & GSAP</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+
+    <main data-barba="container" data-barba-namespace="about-section"></main>
+    <div class="header">
+        <h1 class="title animate-this">
+            about page
+        </h1>
+        <div class="animate-this button">
+            <a href="index.html">go back to home</a>
+        </div>
+    </div>
+    </main>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
