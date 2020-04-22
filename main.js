@@ -8,7 +8,7 @@ function delay(n) {
 }
 
 function pageTransition() {
-	var tl = gsap.timeline()
+	const tl = gsap.timeline()
 	tl.to('.loading-screen', {
 		duration: 1.2,
 		width: '100%',
@@ -27,7 +27,7 @@ function pageTransition() {
 }
 
 function contentAnimation() {
-	var tl = gsap.timeline()
+	const tl = gsap.timeline()
 	tl.from('.animate-this', { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 })
 }
 
